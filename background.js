@@ -26,7 +26,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 })
 
 chrome.commands.onCommand.addListener(function(command) { 
-  if(command === "Shortkey-1" && shortcuts[0] != "empty") {
+  if(command === "Shortkey-1" && shortcuts[0] != undefined) {
     chrome.tabs.create({'url': shortcuts[0]});
   } else if (command === "Shortkey-2" && shortcuts[1] != undefined) {
       chrome.tabs.create({'url': shortcuts[1]});
