@@ -6,8 +6,18 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.runtime.sendMessage({"message": "shortcut1", "value": shortcuts[0]});
     saveShortcuts();
   })
+  document.getElementById('reset1').addEventListener('click', function() {
+    shortcuts[0] = "";
+    chrome.runtime.sendMessage({"message": "shortcut1", "value": shortcuts[0]});
+    saveShortcuts();
+  })
   document.getElementById('saveShortcut2').addEventListener('click', function() {
     shortcuts[1] = document.getElementById("shorcut2").value;
+    chrome.runtime.sendMessage({"message": "shortcut2", "value": shortcuts[1]});
+    saveShortcuts();
+  })
+  document.getElementById('reset2').addEventListener('click', function() {
+    shortcuts[1] = "";
     chrome.runtime.sendMessage({"message": "shortcut2", "value": shortcuts[1]});
     saveShortcuts();
   })
@@ -16,8 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.runtime.sendMessage({"message": "shortcut3", "value": shortcuts[2]});
     saveShortcuts();
   })
+  document.getElementById('reset3').addEventListener('click', function() {
+    shortcuts[2] = "";
+    chrome.runtime.sendMessage({"message": "shortcut3", "value": shortcuts[2]});
+    saveShortcuts();
+  })
   document.getElementById('saveShortcut4').addEventListener('click', function() {
     shortcuts[3] = document.getElementById("shorcut4").value;
+    chrome.runtime.sendMessage({"message": "shortcut4", "value": shortcuts[3]});
+    saveShortcuts();
+  })
+  document.getElementById('reset4').addEventListener('click', function() {
+    shortcuts[3] = "";
     chrome.runtime.sendMessage({"message": "shortcut4", "value": shortcuts[3]});
     saveShortcuts();
   })
@@ -26,8 +46,18 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.runtime.sendMessage({"message": "shortcut5", "value": shortcuts[4]});
     saveShortcuts();
   })
+  document.getElementById('reset5').addEventListener('click', function() {
+    shortcuts[4] = "";
+    chrome.runtime.sendMessage({"message": "shortcut5", "value": shortcuts[4]});
+    saveShortcuts();
+  })
   document.getElementById('saveShortcut6').addEventListener('click', function() {
     shortcuts[5] = document.getElementById("shorcut6").value;
+    chrome.runtime.sendMessage({"message": "shortcut6", "value": shortcuts[5]});
+    saveShortcuts();
+  })
+  document.getElementById('reset6').addEventListener('click', function() {
+    shortcuts[5] = "";
     chrome.runtime.sendMessage({"message": "shortcut6", "value": shortcuts[5]});
     saveShortcuts();
   })
@@ -36,8 +66,18 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.runtime.sendMessage({"message": "shortcut7", "value": shortcuts[6]});
     saveShortcuts();
   })
+  document.getElementById('reset7').addEventListener('click', function() {
+    shortcuts[6] = "";
+    chrome.runtime.sendMessage({"message": "shortcut7", "value": shortcuts[6]});
+    saveShortcuts();
+  })
   document.getElementById('saveShortcut8').addEventListener('click', function() {
     shortcuts[7] = document.getElementById("shorcut8").value;
+    chrome.runtime.sendMessage({"message": "shortcut8", "value": shortcuts[7]});
+    saveShortcuts();
+  })
+  document.getElementById('reset8').addEventListener('click', function() {
+    shortcuts[7] = "";
     chrome.runtime.sendMessage({"message": "shortcut8", "value": shortcuts[7]});
     saveShortcuts();
   })
